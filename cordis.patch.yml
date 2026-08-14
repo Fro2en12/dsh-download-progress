@@ -1,0 +1,7 @@
+# dsh-download-progress bundle patch
+#
+# 供 `dsh plugin --profile web add <路径>` 自动挂载（Loader bundle 层）；
+# 手动挂载的用户可自行在 profiles/web/cordis.patch.yml 加 insert 条目。
+- insert:
+    - id: dsh-download-progress
+      name: 'dsh-download-progress'
